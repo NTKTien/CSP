@@ -12,7 +12,12 @@ def main():
         for char in part:
             if char.isalpha():
                 letters.add(char)
-            
+
+    # Neu so luong chu cai vuot qua 10 thi khong co phuong an
+    if len(letters) > 10:
+        print("NO SOLUTION")
+        return
+        
     # Sap xep theo thu tu alphabet
     letters = sorted(list(letters))
     
